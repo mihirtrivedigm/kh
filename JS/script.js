@@ -58,10 +58,10 @@ if(numb1==numb2)
 }
 else if(numb1>numb2)
 {
-document.getElementById("finalResult").innerHTML = "Player 1 is the Winner"
+document.getElementById("finalResult").innerHTML = "Player 1 is Correct"
 }
 else if(numb1<numb2){
-  document.getElementById("finalResult").innerHTML = "Player 2 is the Winner."
+  document.getElementById("finalResult").innerHTML = "Player 2 is Correct."
 }
 
 
