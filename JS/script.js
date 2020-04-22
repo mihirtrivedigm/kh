@@ -1,5 +1,3 @@
-alert("hello mihir");
-
 function throwDies(){
 var numb1 = Math.floor(Math.random() * 6) + 1;
 var numb2 = Math.floor(Math.random() * 6) + 1;
@@ -56,17 +54,14 @@ document.getElementById("secondOutput").innerHTML = "<img src='IMG/six.png'>"
 
 if(numb1==numb2)
 {
-  document.getElementById("firstResult").innerHTML = "Tie"
-  document.getElementById("secondResult").innerHTML = "Tie"
+  document.getElementById("finalResult").innerHTML = "Its a Tie. Try again if you wish."
 }
 else if(numb1>numb2)
 {
-document.getElementById("firstResult").innerHTML = "Winner"
-document.getElementById("secondResult").innerHTML = "Looser"
+document.getElementById("finalResult").innerHTML = "Player 1 is the Winner"
 }
 else if(numb1<numb2){
-  document.getElementById("firstResult").innerHTML = "Looser"
-  document.getElementById("secondResult").innerHTML = "Winner"
+  document.getElementById("finalResult").innerHTML = "Player 2 is the Winner."
 }
 
 
