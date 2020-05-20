@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<h1>Key Loger</h1>
+<p id="log"></p>
+
+<script>
+// Create factory Objects
+
+function Employee(yearsOfExperience, name, skillSet){
+this.yearsOfExperience = yearsOfExperience;
+this.name = name;
+this.skillSet = skillSet;
+this.finishProject = function executeProject(){
+analysisPhase();
+codingPhase();
+testing();
+demo();
+}
+}
+
+function analysisPhase(){
+alert("Analysis done");
+}
+
+function codingPhase(){
+alert("Coding done");
+}
+
+function testing(){
+alert("Testing done");
+}
+
+function demo(){
+alert("Demo done");
+}
+
+//var employee1 = new Employee(2.5,"Mihir",["Java","SAP Commerce Cloud"]);
+var employee1 = new Employee(2.5,"Mihir",["JAVA","SAP Commerce Cloud"]);
+// Display some data from the object:
+document.getElementById("demo").innerHTML = "I am " + employee1.name+ " I know "+employee1.skillSet;
+
+// log key code starts
+const log = document.getElementById('log');
+
+document.addEventListener('keypress', logKey);
+
+function logKey(e) {
+alert(e.code);
+  //log.textContent += ` ${e.code}`;
+}
+// log key code ends
+</script>
+
+</body>
+</html>
