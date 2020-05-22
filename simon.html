@@ -14,6 +14,13 @@
 
 <body>
 
+  <audio id="sound1" preload="auto" src="Music/click1.mp3" type="audio/mpeg"></audio>
+<audio id="sound2" preload="auto" src="Music/click2.mp3" type="audio/mpeg"></audio>
+<audio id="sound3" preload="auto" src="Music/click3.mp3" type="audio/mpeg"></audio>
+<audio id="sound4" preload="auto" src="Music/click4.mp3" type="audio/mpeg"></audio>
+<audio id="sound5" preload="auto" src="Music/click5.mp3" type="audio/mpeg"></audio>
+<audio id="sound6" preload="auto" src="Music/click6.mp3" type="audio/mpeg"></audio>
+
   <div class="jumbotron text-center">
     <h3 class="display-4">The Simon Game</h3>
     <button type="button" class="btn btn-primary"> <h3 class="display-5"> Start</h3></button>
@@ -22,27 +29,30 @@
   <div class="container">
     <div class="row text-center">
       <div class="col-sm-4 p-5">
-        <button type="button" class="btn btn-primary drum" id="one"> </button>
+        <button type="button" class="btn btn-primary drum" onclick="number1()" id="number1"> </button>
       </div>
       <div class="col-sm-4 p-5">
-        <button type="button" class="btn btn-success drum" id="two"> </button>
+        <button type="button" class="btn btn-success drum" onclick="number2()" id="number2"> </button>
       </div>
       <div class="col-sm-4 p-5">
-        <button type="button" class="btn btn-warning drum" id="three"> </button>
+        <button type="button" class="btn btn-warning drum" onclick="number3()"> </button>
       </div>
     </div>
     <div class="row text-center">
       <div class="col-sm-4 p-5">
-        <button type="button" class="btn btn-dark drum" id="four"> </button>
+        <button type="button" class="btn btn-dark drum" onclick="number4()"> </button>
       </div>
       <div class="col-sm-4 p-5">
-        <button type="button" class="btn btn-danger drum" id="five"> </button>
+        <button type="button" class="btn btn-danger drum" onclick="number5()"> </button>
       </div>
       <div class="col-sm-4 p-5">
-        <button type="button" class="btn btn-secondary drum" id="six"> </button>
+        <button type="button" class="btn btn-secondary drum" onclick="number6()"> </button>
       </div>
     </div>
   </div>
+
+
+
 
 <footer class="fixed-bottom d-flex justify-content-center" style="font-size:10px">&#128540; Copy rights Mihir Supertramp</p>
 
