@@ -13,14 +13,12 @@ padding: 20%;
   height: 200%;
   width: 50%;
   padding: 15px 25px;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
 }
 
 .drum:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  transform: translateY(8px);
+}
+
+.move{
+transform: translateY(8px);
 }
